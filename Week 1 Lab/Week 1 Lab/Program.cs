@@ -1,12 +1,12 @@
 ﻿using System;
-class InchesToCentimeters
+
+class InchesToCentimetersInteractive
 { static void Main()
     {
         const double CMperINCH = 2.54; // Conversion factor
-        double inches = 3.0;
+        Console.Write("Enter the number of inches: ");
+        double inches = Convert.ToDouble(Console.ReadLine()); // Read user input
         double centimeters = inches * CMperINCH; // Convert inches to centimeters
-
         Console.WriteLine($"{inches} inches is equal to {centimeters} centimeters.");
-
     }
 }
